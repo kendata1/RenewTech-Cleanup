@@ -9,7 +9,7 @@ const template = onSubmit => html`
 			<h2>Add Solution</h2>
 			<form @submit=${onSubmit} class="create-form">
 				<input type="text" name="type" id="type" placeholder="Solution Type" />
-				<input type="text" name="imageUrl" id="image-url" placeholder="Image URL" />
+				<input type="text" name="image-url" id="image-url" placeholder="image-url" />
 				<textarea
 					id="description"
 					name="description"
@@ -18,7 +18,7 @@ const template = onSubmit => html`
 					cols="10"></textarea>
 				<textarea
 					id="more-info"
-					name="learnMore"
+					name="more-info"
 					placeholder="more Info"
 					rows="2"
 					cols="10"></textarea>

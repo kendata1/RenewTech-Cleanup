@@ -13,3 +13,11 @@ export const getOneSolution = id => {
 export const createSolution = data => {
 	return request('POST', baseUrl, data);
 };
+
+export const deleteSolution = id => {
+	return request('DELETE', `${baseUrl}/${id}`);
+};
+
+export const editSolution = (id, data) => {
+	return request('PUT', `${baseUrl}/${id}`, data);
+};
